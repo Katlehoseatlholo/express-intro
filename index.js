@@ -22,7 +22,7 @@ app.get("/api/greet", (req, res) => {
 
   if (!greetings[language]) {
     return res.json({
-      error: "Opps did not find find language in my books",
+      error: "Opps did not find  language in my books",
     });
   }
 
