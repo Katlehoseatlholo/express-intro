@@ -3,7 +3,7 @@ const app = express();
 app.use(express.json());
 app.use(express.static("public"));
 //app.get("/", (req, res) => {
-  //res.send("FIRST API I CREATED");
+//res.send("FIRST API I CREATED");
 //});
 
 app.get("/api", (req, res) => {
@@ -12,7 +12,7 @@ app.get("/api", (req, res) => {
 const greetings = {
   english: "Hello",
   zulu: "Sawubona",
-  xhosa: "Molo" ,
+  xhosa: "Molo",
   tswana: "Dumela",
 };
 
@@ -57,7 +57,7 @@ app.post("/api/greet", (req, res) => {
   res.json(req.body);
 });
 
-const PORT = 4999;
+const PORT = process.env.PORT || 4999;
 app.listen(PORT, () => {
   console.log(`app strated on port ${PORT}`);
 });
