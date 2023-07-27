@@ -12,7 +12,7 @@ app.get("/api", (req, res) => {
 const greetings = {
   english: "Hello",
   zulu: "Sawubona",
-  xhosa : "Molo" ,
+  xhosa: "Molo" ,
   tswana: "Dumela",
 };
 
